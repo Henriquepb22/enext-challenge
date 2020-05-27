@@ -58,14 +58,14 @@ function BreedForm() {
                 <h1 className="form-title">Buscar cachorro por raça</h1>
                 <label className="form-label" htmlFor="dogBreedInput">
                     Raça:
+                    <input
+                        id="dogBreedInput"
+                        type="text"
+                        placeholder="Digite o nome da raça"
+                        onChange={handleInput}
+                        value={inputedBreed}
+                    />
                 </label>
-                <input
-                    id="dogBreedInput"
-                    type="text"
-                    placeholder="Digite o nome da raça"
-                    onChange={handleInput}
-                    value={inputedBreed}
-                />
                 <select onChange={handleSelect} value={selectedBreed}>
                     <option value="" disabled>
                         Selecione uma raça

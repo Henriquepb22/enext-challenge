@@ -18,5 +18,16 @@
 
 .form-label {
     font-size: 1.4rem;
-    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .breed-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-label {
+        margin-bottom: 10px;
+    }
 }
