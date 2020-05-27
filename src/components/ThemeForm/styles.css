@@ -1,0 +1,40 @@
+.theme-wrapper {
+    margin: 50px 0 10px;
+}
+
+.theme-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+
+.save-btn {
+    text-align: center;
+    width: 180px;
+    height: 33px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background: #27ae60;
+    color: white;
+    transition: opacity 0.4s;
+}
+
+.save-btn:hover,
+.save-btn:focus {
+    transition: opacity 0.4s;
+    opacity: 0.7;
+    cursor: pointer;
+}

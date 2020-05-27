@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 import BreedForm from "../BreedForm";
 import ThemeForm from "../ThemeForm";
 
+import ThemeContext, { breedsTheme } from "../../context/ThemeContext";
+
 import "./styles.css";
 
 function DogsSection() {
+    const [theme, setTheme] = useState(breedsTheme);
+
     return (
         <section className="dogs-section-container">
-            <BreedForm />
-            <ThemeForm />
+            <ThemeContext.Provider value={{ theme, setTheme }}>
+                <BreedForm />
+                <ThemeForm />
+            </ThemeContext.Provider>
         </section>
     );
 }

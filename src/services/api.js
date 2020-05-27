@@ -6,6 +6,6 @@ export async function getBreedsList() {
         return breedsList.message;
     } catch (err) {
         console.error(err);
-        return [];
+        return {};
     }
 }

@@ -107,6 +107,8 @@ section {
 }
 body {
     line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 ol,
 ul {
@@ -126,4 +128,38 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+select {
+    font-size: 1.2rem;
+    margin: 0 0.4rem;
+    padding: 5px 0;
+    border-radius: 3px;
+    background: none;
+    text-transform: capitalize;
+}
+
+select:hover,
+select:focus {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 1px #ccc;
+    outline-color: #ccc;
+}
+
+select option {
+    font-size: 1.2rem;
+    text-transform: capitalize;
 }
