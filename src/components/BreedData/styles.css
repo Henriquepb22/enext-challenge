@@ -20,4 +20,9 @@
     left: 0;
     right: 0;
     text-align: center;
+    text-shadow: 2px 2px 6px #222;
+}
+
+.muted-text {
+    color: #777;
 }

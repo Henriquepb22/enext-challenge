@@ -1,8 +1,16 @@
 import React, { useContext } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import ThemeContext from "../../context/ThemeContext";
 
 import "./styles.css";
+
+toast.configure({
+    autoClose: 1500,
+    position: "top-right",
+    hideProgressBar: false,
+});
 
 function ThemeForm() {
     const { theme, setTheme } = useContext(ThemeContext);
@@ -14,6 +22,7 @@ function ThemeForm() {
         const themeWithDate = { ...theme, savedAt: localDate.toLocaleString() };
 
         localStorage.setItem("breedsTheme", JSON.stringify(themeWithDate));
+        toast.success("Salvo com sucesso!");
     }
 
     return (

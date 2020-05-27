@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, memo } from "react";
 
 import ThemeContext from "../../context/ThemeContext";
 
@@ -85,9 +85,11 @@ function BreedData({ breedName }) {
 
     return (
         <div>
-            <h1>Digite ou selecione uma raça para buscar</h1>
+            <h4 className="muted-text">
+                Digite ou selecione uma raça para buscar
+            </h4>
         </div>
     );
 }
 
-export default BreedData;
+export default memo(BreedData);
