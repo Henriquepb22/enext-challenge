@@ -26,12 +26,19 @@ function BreedData({ name }) {
         }
     }, [name]);
 
+    if (name !== "") {
+        return (
+            <div>
+                <h1>{name}</h1>
+                <div className="image-container">
+                    <img src={breedImage} alt={name} />
+                </div>
+            </div>
+        );
+    }
     return (
         <div>
-            <h1>{name}</h1>
-            <div className="image-container">
-                <img src={breedImage} alt={name} />
-            </div>
+            <h1>Digite o nome de uma raça para buscar</h1>
         </div>
     );
 }

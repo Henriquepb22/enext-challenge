@@ -51,10 +51,8 @@ function BreedForm() {
                     />
                 </label>
                 <select
-                    id="dogBreedSelect"
                     onChange={(e) => setSelectedBreed(e.target.value)}
                     defaultValue=""
-                    value={selectedBreed}
                 >
                     <option value="" disabled>
                         Selecione ou digite uma raça

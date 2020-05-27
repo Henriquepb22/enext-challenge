@@ -1,16 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./styles/global.css";
 
 import Header from "./components/Header";
 import DogsSection from "./components/DogsSection";
 
-import ThemeContext from "./context/ThemeContext";
+import ThemeContext, { breedsTheme } from "./context/ThemeContext";
 
 function App() {
-    const [theme, setTheme] = useState({
-        fontColor: "#000",
-        fontFamily: "Roboto",
-    });
+    const [theme, setTheme] = useState(breedsTheme);
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>

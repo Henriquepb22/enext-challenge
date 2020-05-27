@@ -5,6 +5,12 @@ import ThemeContext from "../../context/ThemeContext";
 function ThemeForm() {
     const { theme, setTheme } = useContext(ThemeContext);
 
+    function saveTheme(e) {
+        e.preventDefault();
+
+        localStorage.setItem("breedsTheme", JSON.stringify(theme));
+    }
+
     return (
         <div>
             <form>
@@ -42,6 +48,7 @@ function ThemeForm() {
                         <option value="#8e44ad">Wisteria</option>
                     </select>
                 </label>
+                <button onClick={(e) => saveTheme(e)}>Salvar</button>
             </form>
         </div>
     );
