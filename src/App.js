@@ -1,11 +1,14 @@
 import React from "react";
+import "./styles/global.css";
+
+import Header from "./components/Header";
+import DogsSection from "./components/DogsSection";
 
 function App() {
     return (
         <div>
-            <header>
-                <h1>Enext Desafio Front-end</h1>
-            </header>
+            <Header />
+            <DogsSection />
         </div>
     );
 }

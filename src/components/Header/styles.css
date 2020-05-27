@@ -1,0 +1,11 @@
+.header-container {
+    height: 70px;
+    background: #e67e22;
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
